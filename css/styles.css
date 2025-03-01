@@ -11,6 +11,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .nav-header:hover,
 .nav-header:focus {
   color: #404bbf;
@@ -56,7 +57,6 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -102,6 +102,7 @@ ul {
   padding-top: 188px;
   padding-bottom: 188px;
 }
+
 .maine-wrapper .container {
   display: flex;
   justify-content: center;
@@ -166,7 +167,6 @@ ul {
 }
 
 .team-list-item .thumb-team {
-  border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   box-sizing: border-box;
   width: 264px;
@@ -179,10 +179,12 @@ ul {
   justify-content: center;
   flex-direction: row;
 }
-.team-list-item li {
+
+.team-list-item-li {
   width: calc((100% - 72px) / 4);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border-radius: 0 0 4px 4px;
 }
 
 .team-wrapper {
@@ -247,23 +249,24 @@ img {
 .header-wrapper .container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav-header-wrapper-ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0;
 }
 
 .nav-header-wrapper {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
+  align-items: flex-start;
 }
 
-.nav-header-wrapper ul {
-  display: flex;
-  justify-content: flex-start;
-  gap: 40px;
-  margin: 0 auto;
-}
-
-.address-header ul {
+.address-header-ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -276,14 +279,14 @@ img {
   padding-bottom: 120px;
 }
 
-.content-wrapper ul {
+.content-list {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   gap: 24px;
 }
 
-.content-wrapper ul li {
+.content-list-li {
   width: calc((100% - 72px) / 4);
 }
 
@@ -317,7 +320,7 @@ img {
   color: #2e2f42;
 }
 
-.portfolio-wrapper ul {
+.portfolio-list-item {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -326,18 +329,15 @@ img {
   gap: 24px;
 }
 
-.portfolio-list-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  box-sizing: border-box;
+.portfolio-list-item-li {
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-item .thumb-team {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
+  border-top: none;
   padding: 32px 16px;
   width: 360px;
 }
