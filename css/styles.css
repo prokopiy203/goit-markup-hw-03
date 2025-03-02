@@ -209,6 +209,8 @@ ul {
   border: none;
   min-width: 169px;
   height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
   background-color: #4d5ae5;
 }
 
@@ -243,6 +245,9 @@ img {
 .header-wrapper {
   border-bottom: 1px solid #e7e9fc;
   width: 100%;
+}
+
+.nav-header-li {
   padding: 24px 0;
 }
 
@@ -263,7 +268,7 @@ img {
 
 .nav-header-wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .address-header-ul {
@@ -361,7 +366,8 @@ img {
   height: 1px;
   padding: 0;
   margin: -1px;
+  white-space: nowrap;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0;
+  clip-path: inset(100%);
 }
