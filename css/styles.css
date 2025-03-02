@@ -10,6 +10,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+}
+
+.nav-header-li {
+  padding: 24px 0;
 }
 
 .nav-header:hover,
@@ -72,7 +77,6 @@ body {
 a {
   text-decoration: none;
   color: currentColor;
-  padding: 0;
 }
 
 a:hover {
@@ -245,10 +249,6 @@ img {
 .header-wrapper {
   border-bottom: 1px solid #e7e9fc;
   width: 100%;
-}
-
-.nav-header-li {
-  padding: 24px 0;
 }
 
 .header-wrapper .container {
