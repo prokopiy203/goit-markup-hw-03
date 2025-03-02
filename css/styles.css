@@ -326,7 +326,7 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   row-gap: 48px;
-  gap: 24px;
+  column-gap: 24px;
 }
 
 .portfolio-list-item-li {
